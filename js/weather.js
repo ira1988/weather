@@ -1,3 +1,4 @@
+
 ref={
     input:document.querySelector('.input'),
     widget:document.querySelector('.widget'),
@@ -10,16 +11,21 @@ ref={
 const KEY= 'f03af649521e47f3b88142345230401'
 const BASEAPI= 'http://api.weatherapi.com/v1'
 
-ref.input.addEventListener("input", _.debounce( findWeatherOnInput,500));
+ref.input.addEventListener("change", findWeatherOnInput);
+
+
 
 function  findWeatherOnInput(){
     let cityName=ref.input.value
+    if (!cityName){
+        return 
+    }
+    console.log(cityName)
     getWeatherInfo(cityName).then(data=>{
         updateWeather(data)
+        ref.input.value=""
     }
     ).catch(err=> {console.log(err)})
-
-    ref.input.value=""
 }
 
 function getWeatherInfo(city){
