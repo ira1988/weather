@@ -5,9 +5,10 @@ body {
   font-family: Poiret One;
 }
 input{
-    width: 100%;
+    width: 50%;
     height:50px;
     display:block;
+    margin: auto;
     border-radius: 20px;
 }
 [placeholder]{
@@ -27,7 +28,7 @@ input{
   left: 50%;
   display: flex;
   height: 300px;
-  width: 100%;
+  width: 50%;
   transform: translate(-50%, -50%);
   flex-wrap: wrap;
   cursor: pointer;
