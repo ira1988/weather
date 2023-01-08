@@ -16,6 +16,11 @@ input{
     font-weight: 80px;
    
 }
+.container{
+  width: 500px;
+  padding-left:10px ;
+  padding-right: 10px;
+}
 .widget {
   position: absolute;
   top: 50%;
