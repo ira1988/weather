@@ -7,7 +7,7 @@ body {
 input{
     width: 100%;
     height:50px;
-    /* display:block; */
+    display:block;
     border-radius: 20px;
 }
 [placeholder]{
